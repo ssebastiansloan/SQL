@@ -1,0 +1,78 @@
+create table departments (
+    department varchar(100),
+    division varchar(100),
+    primary key (department)
+    );
+
+
+insert into departments values ('Clothing','Home');
+insert into departments values ('Furniture','Home');
+insert into departments values ('Computers','Electronics');
+insert into departments values ('Phones & Tablets','Electronics');
+insert into departments values ('Garden','Outdoors');
+insert into departments values ('Sports','Outdoors');
+insert into departments values ('Children Clothing','Kids');
+insert into departments values ('Toys','Kids');
+insert into departments values ('Supplements','Health');
+insert into departments values ('Automotive','Hardware');
+insert into departments values ('Tools','Hardware');
+insert into departments values ('Jewelry','Fashion');
+insert into departments values ('Beauty','Fashion');
+insert into departments values ('Cosmetics','Fashion');
+insert into departments values ('Books','Entertainment');
+insert into departments values ('Games','Entertainment');
+
+create table regions (
+   region_id int,
+   region varchar(20),
+   primary key (region_id)
+  );
+
+insert into regions values (1, 'Northeast');
+insert into regions values (2, 'Southeast');
+insert into regions values (3, 'Midwest');
+insert into regions values (4, 'Northwest');
+insert into regions values (5, 'Southwest');
+
+create table employees (
+	employee_id INT,
+	first_name VARCHAR(50),
+	last_name VARCHAR(50),
+	email VARCHAR(50),
+	hire_date DATE,
+	department VARCHAR(17),
+	salary INT,
+	region_id INT,
+	primary key (employee_id)
+);
+
+insert into employees values (1, 'Barry', 'Moana', 'bmoano0@dion.ne.jp', '2006-04-20', 'Sports', 154864, 4);
+insert into employees values (2, 'Aeriel', 'McNee', 'amcnee1@google.es', '2009-01-26', 'Tools', 56752, 3);
+insert into employees values (3, 'Sidney', 'Symonds', 'ssymonds2@hhs.gov', '2010-05-17', 'Clothing', 95313, 4);
+insert into employees values (4, 'Axom', 'Rowantree', axro@gdog.com, '2014-08-02', 'Phones & Tablets', 119674, 1);
+insert into employees values (5, 'Felix', 'Morffew', 'fmorffew4@a8.net', '2003-01-14', 'Computers', 55307, 5);
+insert into employees values (6, 'Beth', 'Trow', 'btrow5@technorati.com', '2003-06-08', 'Sports', 134501, 3);
+insert into employees values (7, 'Arlene', 'Curwood', 'acurwood6@1und1.de', '2006-02-19', 'Clothing', 28995, 5);
+insert into employees values (8, 'Sally', 'Dubber', 'sdubber7@t-online.de', '2012-05-28', 'Phones & Tablets', 101066, 3);
+insert into employees values (9, 'Dale', 'Trail', 'dtrail8@tamu.edu', '2003-03-01', 'Supplements', 82753, 1);
+insert into employees values (10, 'Rob', 'Pattinsey', rpatz@cali.com, '2008-07-21', 'Clothing', 72225, 2);
+insert into employees values (11, 'Nickey', 'Pointon', 'npointona@vistaprint.com', '2006-12-30', 'Jewelry', 126333, 3);
+insert into employees values (12, 'Leonora', 'Casaroli', 'lcasarolib@plala.or.jp', '2013-07-22', 'Beauty', 99504, 3);
+insert into employees values (13, 'Anette', 'Arnao', aarno@tamu.edu, '2009-05-23', 'Games', 38162, 1);
+insert into employees values (14, 'Jodey', 'Hoots', 'jhookd@booking.com', '2003-10-16', 'Tools', 126588, 2);
+insert into employees values (15, 'Alyson', 'Franzonello', afranzy@asu.edu, '2004-01-01', 'Furniture', 61256, 5);
+insert into employees values (16, 'Merell', 'Yakovliv', 'myakovlivf@ucsd.edu', '2008-08-16', 'Beauty', 78141, 4);
+insert into employees values (17, 'Annora', 'Bendelow', 'abendelowg@google.com.hk', '2009-06-12', 'Toys', 75283, 5);
+insert into employees values (18, 'Ronica', 'Armfield', rarms@penn.edu, '2012-09-14', 'Toys', 114983, 5);
+insert into employees values (19, 'Bernie', 'Hendricks', 'bhendricksi@privacy.gov.au', '2006-02-04', 'Tools', 158268, 3);
+insert into employees values (20, 'Jessie', 'Columbus', 'jcolumj@pen.io', '2013-07-08', 'Computers', 77173, 1);
+insert into employees values (21, 'Bernardo', 'Davage', Bdavage@email.net, '2013-07-11', 'Clothing', 124949, 2);
+insert into employees values (22, 'Kayla', 'Duff', kdogs@okay.com, '2007-02-01', 'Toys', 78589, 3);
+insert into employees values (23, 'Vanda', 'Marwick', 'vmarwickm@upenn.edu', '2014-02-06', 'Automotive', 103570, 4);
+insert into employees values (24, 'Coral', 'Sylversen', 'csyversenn@aboutads.info', '2016-03-03', 'Supplements', 91323, 3);
+insert into employees values (25, 'Jane', 'Treem', 'zbreemo@abc.net.au', '2012-07-30', 'Cosmetics', 56688, 2);
+insert into employees values (26, 'Francesco', 'Cawson', fcawson@zmail.net, '2006-06-24', 'Books', 78881, 1);
+insert into employees values (27, 'Miles', 'Chawkley', 'nchawkleyq@flavors.me', '2013-09-22', 'Games', 156303, 3);
+
+
+
